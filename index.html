@@ -1,489 +1,521 @@
 <!DOCTYPE html>
-<!-- saved from url=(0044)https://www.lfhacks.com/assets/revealjs.html -->
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- saved from url=(0052)https://revealjs-themes.dzello.com/robot-lung.html#/ -->
+<html
+  lang="en"
+  class=" js no-mobile desktop no-ie chrome chrome78 root-section gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius cssreflections csstransforms csstransitions no-touch retina fontface domloaded w-1440 gt-240 gt-320 gt-480 gt-640 gt-768 gt-800 gt-1024 gt-1280 lt-1680 lt-1920 no-portrait landscape"
+  id="robot-lung-page"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-        <meta
-            name="description"
-            content="用revealjs制作的revealjs教程, 简单明了"
-        />
-        <meta name="keywords" content="revealjs,slides,JavaScript" />
-        <meta name="author" content="LFhacks.com" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
+    <title>lxd's 挑夹棋分享</title>
 
-        <title>how qiangda the reveal is!</title>
+    <meta
+      name="description"
+      content="A framework for easily creating beautiful presentations using HTML"
+    />
+    <meta name="author" content="Hakim El Hattab" />
 
-        <link rel="stylesheet" href="./src/reveal.css" />
-        <link rel="stylesheet" href="./src/black.css" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
 
-        <!-- Theme used for syntax highlighting of code -->
-        <link rel="stylesheet" href="./src/zenburn.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-        <!-- Printing and PDF exports -->
-        <script>
-            var link = document.createElement("link")
-            link.rel = "stylesheet"
-            link.type = "text/css"
-            link.href = window.location.search.match(/print-pdf/gi)
-                ? "../lib/reveal/css/print/pdf.css"
-                : "../lib/reveal/css/print/paper.css"
-            document.getElementsByTagName("head")[0].appendChild(link)
-        </script>
-        <link rel="stylesheet" type="text/css" href="./src/paper.css" />
-        <script type="text/javascript" src="./src/marked.js"></script>
-        <script type="text/javascript" src="./src/markdown.js"></script>
-        <script type="text/javascript" src="./src/notes.js"></script>
-        <script type="text/javascript" src="./src/highlight.js"></script>
-        <script
-            type="text/javascript"
-            src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/popup.js"
-            async=""
-        ></script>
-        <script
-            type="text/javascript"
-            src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/tat_popup.js"
-            async=""
-        ></script>
-        <style type="text/css">
-            .hljs-ln {
-                border-collapse: collapse;
-            }
-            .hljs-ln td {
-                padding: 0;
-            }
-            .hljs-ln-n:before {
-                content: attr(data-line-number);
-            }
-        </style>
-    </head>
-    <body>
-        <div
-            class="reveal slide center has-vertical-slides has-horizontal-slides ready"
-            role="application"
-            data-transition-speed="default"
-            data-background-transition="fade"
+    <link
+      rel="stylesheet"
+      href="./src/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./src/robot-lung.css"
+      id="theme"
+    />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link
+      rel="stylesheet"
+      href="./src/zenburn.css"
+    />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./src/paper.css"
+    />
+
+    <!--[if lt IE 9]>
+      <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <script
+      type="text/javascript"
+      src="./src/marked.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./src/markdown.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/popup.js"
+      async=""
+    ></script>
+    <script
+      type="text/javascript"
+      src="./src/highlight.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./src/search.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./src/zoom.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./src/notes.js"
+    ></script>
+
+    <!-- 用于转换带有运动模糊的数字动画 -->
+    <script
+      type="text/javascript"
+      src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/tat_popup.js"
+      async=""
+    ></script>
+    <script
+      id="bfwone"
+      data="dep=jquery.17&err=0"
+      type="text/javascript"
+      src="http://repo.bfw.wiki/bfwrepo/js/bfwone.js"
+    ></script>
+    <script type="text/javascript">
+      bready(function() {
+        use(["bounty"], function() {
+          bounty.default({ el: ".js-bounty", value: "¥42,000" });
+        });
+      });
+    </script>
+
+    <!-- formats -->
+  </head>
+
+  <body style="transition: -webkit-transform 0.8s ease 0s;">
+    <div
+      class="reveal slide center has-vertical-slides has-horizontal-slides ready"
+      role="application"
+      data-transition-speed="fast"
+      data-background-transition="fade"
+    >
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div
+        class="slides"
+        style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.845714);"
+      >
+        <section class="present" style="top: 165px; display: block;">
+          <h1>挑夹棋分享</h1>
+          <h3>时间优化和代码管理</h3>
+          <p>
+            <small
+              >Copyright by
+              <a href="http://xuedixuedi.github.io/">Liu Xuedi</a>
+            </small>
+          </p>
+        </section>
+
+        <section
+          hidden=""
+          aria-hidden="true"
+          class="future"
+          style="top: 206.5px; display: block;"
         >
-            <div
-                class="slides"
-                style="width: 960px; height: 700px; zoom: 1.01486;"
-            >
-                <section class="present" style="top: 220.5px; display: block;">
-                    <h2>
-                        大家好<br />
-                        这是个好东西
-                    </h2>
-                    <p class="footer">
-                        <span>按 → 继续</span>
-                    </p>
-                </section>
+          <h2>代码整体逻辑</h2>
+          <img
+            alt="Down arrow"
+            src="./src/pics/flowchrt1.png"
+            data-lazy-loaded=""
+          />
+        </section>
 
-                <section
-                    data-markdown=""
-                    data-markdown-parsed="true"
-                    hidden=""
-                    aria-hidden="true"
-                    class="future"
-                    style="top: 131.5px; display: block;"
-                >
-                    <h2>这是一个PPT</h2>
+        <section
+          hidden=""
+          aria-hidden="true"
+          class="stack future"
+          style="top: 0px; display: block;"
+        >
+          <section style="top: 54.5px; display: block;">
+            <h2>搜索优化1</h2>
+            <h3>alpha-beta 剪枝</h3>
+              <img
+                width="800"
+                alt="Down arrow"
+                src="http://programmermagazine.github.io/201407/img/Minimax.jpg"
+                data-lazy-loaded=""
+              />
+            </a>
+          </section>
 
-                    <p class="fragment" data-fragment-index="0">
-                        但是比PPT牛逼得多的
-                    </p>
-                    <p class="fragment" data-fragment-index="1">
-                        PPT
-                    </p>
-                    <p class="fragment" data-fragment-index="2">
-                        ……
-                    </p>
-                </section>
+          <section
+            class="future"
+            aria-hidden="true"
+            style="top: 350px; display: none;"
+          >
+            <h2>搜索优化2</h2>
+            <h3>首层着法估值排序</h3>
+            <p>
+              对当前局面进行一层搜索并按照估值排序，生成新的遍历顺序，对更深的层次遍历。
+            </p>
+            <pre><code class="hljs c" data-trim contenteditable>
+      for (int k = 7; k >= 0; k--) {
+        for (int i = 0; i < 12; i++) {
+          for (int j = 0; j < 12; j++) {
+            模拟走子并估值
+          }
+        }
+      }
+      if (depth == 0) {
+        给你的各种走法的估值排序
+      }
+          </code></pre>
+          </section>
+          <section
+            class="future"
+            aria-hidden="true"
+            style="top: 350px; display: none;"
+          >
+            <h2>搜索优化3</h2>
+            <h3>定时截断（不一定适合所有人）</h3>
+            <p>判断程序运行的时间，在即将超时的时候强行返回当前最优解。</p>
+            <ul>
+                <li>可以解决部分超时的局面</li>
+                <li>但是可能会影响棋力</li>
+              </ul>
+          </section>
+        </section>
 
-                <section
-                    hidden=""
-                    aria-hidden="true"
-                    class="future"
-                    style="top: 350px; display: none;"
-                >
-                    <h2>傻了吧</h2>
-                    <p>
-                        这是html
-                    </p>
-                </section>
-                <section
-                    hidden=""
-                    aria-hidden="true"
-                    class="future"
-                    style="top: 350px; display: none;"
-                >
-                    <h2 style="color:darkorange">我们来康康</h2>
-                </section>
-                <section
-                    hidden=""
-                    aria-hidden="true"
-                    class="future"
-                    style="top: 350px; display: none;"
-                >
-                    <h2>这是一张普通的slide</h2>
-                    <li>
-                        你就左右滑动就行
-                    </li>
-                    <li>和前面没什么区别</li>
-                </section>
-                <section
-                    hidden=""
-                    aria-hidden="true"
-                    class="stack future"
-                    style="top: 350px; display: none;"
-                >
-                    <section style="top: 350px; display: none;">
-                        <h2>他也可以上下滑动</h2>
-                        <p>是不是很强</p>
-                        <span> ↓ </span>
-                    </section>
+        <section
+          hidden=""
+          aria-hidden="true"
+          class="stack future"
+          style="top: 0px; display: block;"
+        >
+          <section style="top: 54.5px; display: block;">
+            <h2>估值优化1</h2>
+            <h3>开局库</h3>
+            <p>有时候开局走法很有决定性</p>
+            <ul>
+              <li>手工产生，选择高手走的棋。</li>
+              <li>找一个对局数据库，根据对局结果来选择可靠的着法。</li>
+              <li>根据自己的对局选择可靠的走法。</li>
+            </ul>
+          </section>
 
-                    <section
-                        class="future"
-                        aria-hidden="true"
-                        style="top: 350px; display: none;"
-                    >
-                        <h2>因为</h2>
-                        他是Slide里面的Slide
-                    </section>
-                    <section
-                        class="future"
-                        aria-hidden="true"
-                        style="top: 350px; display: none;"
-                    >
-                        <h2>傻了吧</h2>
-                        没见过吧
-                    </section>
-                    <section
-                        class="future"
-                        aria-hidden="true"
-                        style="top: 350px; display: none;"
-                    >
-                        <h2>到底了</h2>
-                        嘿嘿
-                    </section>
-                </section>
+          <section
+            class="future"
+            aria-hidden="true"
+            style="top: 350px; display: none;"
+          >
+            <h2>估值优化2</h2>
+            <h3>位棋盘 位运算</h3>
+            <p>
+              与(&)   &nbsp;&nbsp;&nbsp;&nbsp;    或(|)<br>
+              0 1 0 1   &nbsp;&nbsp;&nbsp;&nbsp;     0 1 0 1<br>
+              1 0 0 1   &nbsp;&nbsp;&nbsp;&nbsp;    1 0 0 1<br>
+              ————      &nbsp;&nbsp;&nbsp;&nbsp;     ————<br>
+              0 0 0 1   &nbsp;&nbsp;&nbsp;&nbsp;    1 1 0 1
+            </p>
+            <p>
+              <span>
+                用与/或等运算更新棋盘状态，优点是
+              </span>
+              <span class="fragment grow" data-fragment-index="0">
+                <b>
+                 快！
+                </b>
+              </span>
+            </p>
+            <p>
+              在估值的时候多思考如何减少循环 怎么节省时间
+            </p>
+            <!-- <p class="fragment grow" data-fragment-index="1">快</p>  -->
+          </section>
+          <section
+            class="future"
+            aria-hidden="true"
+            style="top: 350px; display: none;"
+          >
+            <h2>估值优化3</h2>
+            <h3>终局判断</h3>
+            <p>在距离棋局结束的几步减少搜索的层数，删除不必要的估值，优化估值内容</p>
+          </section>
+        </section>
 
-                <section style="top: 350px; display: none;">
-                    <p class="fragment" data-fragment-index="0">
-                        然后
-                    </p>
-                    <span class="fragment" data-fragment-index="1"
-                        >我发现
-                    </span>
-                    <span class="fragment" data-fragment-index="2"
-                        >用这玩意</span
-                    >
-                    <span class="fragment" data-fragment-index="3"
-                        >直接可以做视频</span
-                    >
-                    <span class="fragment fade-in" data-fragment-index="4">
-                        <h1 class="fragment grow" data-fragment-index="5">
-                            还很帅
-                        </h1>
-                    </span>
+        <section
+        hidden=""
+        aria-hidden="true"
+        class="future"
+        style="top: 350px; display: none;"
+      >
+        <h2>代码管理问题</h2>
+        <p>
+          虽然是个人项目，但是一共要写几百个版本，最终版本也有几百行代码。为了避免不定时的重构中出现的麻烦。
+        </p>
+        <p class="fragment highlight-red" data-fragment-index="0">
+              <b>
+                模块化
+              </b>
+        </p>
+        <p class="fragment highlight-red" data-fragment-index="1">
+          <b>
+            解耦合
+          </b>
+        </p>
 
-                    <p class="fragment" data-fragment-index="6">
-                        还不用拉关键帧
-                    </p>
-                </section>
+      </section>
 
-                <section
-                    hidden=""
-                    aria-hidden="true"
-                    class="stack future"
-                    style="top: 350px; display: none;"
-                >
-                    <section style="top: 350px; display: none;">
-                        <h2>唉</h2>
-                        <p>我要是早点会就好了</p>
-                    </section>
+      <section
+      style="text-align: left; top: 350px; display: none;"
+      hidden=""
+      aria-hidden="true"
+      class="future"
+    >
+      <h1>THE END</h1>
+      <p>
+        - <a href="https://www.xqbase.com/computer.htm">Thttps://www.xqbase.com/computer.htm 计算机博弈-象棋百科</a> <br />
+        - 谢谢大家～
+      </p>
 
-                    <section
-                        data-transition="concave"
-                        data-transition-speed="slow"
-                        class="future"
-                        aria-hidden="true"
-                        style="top: 350px; display: none;"
-                    >
-                        <p>因为你看</p>
-                        <p>他切换到下一页的时候</p>
-                    </section>
+      </div>
 
-                    <section
-                        data-transition="convex"
-                        data-transition-speed="slow"
-                        class="future"
-                        aria-hidden="true"
-                        style="top: 350px; display: none;"
-                    >
-                        <p>既可以做到这么NB</p>
-                        <p>啊啊啊啊啊</p>
-                    </section>
-                    <section
-                        data-transition="slide"
-                        data-transition-speed="slow"
-                        class="future"
-                        aria-hidden="true"
-                        style="top: 350px; display: none;"
-                    >
-                        <p>也可以商务又高端</p>
-                        <p>哈哈</p>
-                    </section>
-                </section>
-                <section
-                    data-background="#4d7e65"
-                    data-background-transition="zoom"
-                    aria-hidden="true"
-                    class="future"
-                    style="top: 350px; display: none;"
-                >
-                    <h2>甚至可以换个颜（绿）色写代码</h2>
+      <div class="line top"></div>
+      <div class="line bottom"></div>
+      <div class="line left"></div>
+      <div class="line right"></div>
 
-                    <pre><code class="hljs javascript" data-trim="" data-line-numbers="4,8-11"><table class="hljs-ln"><tbody><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="1"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-keyword">import</span> React, { useState } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;</div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="2"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"> </div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="3"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Example</span>(<span class="hljs-params"></span>) </span>{</div></td></tr><tr class="highlight-line"><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="4"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">  <span class="hljs-keyword">const</span> [count, setCount] = useState(<span class="hljs-number">0</span>);</div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="5"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"> </div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="6"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">  <span class="hljs-keyword">return</span> (</div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="7"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span></span></div></td></tr><tr class="highlight-line"><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="8"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>You clicked {count} times<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></div></td></tr><tr class="highlight-line"><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="9"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setCount(count + 1)}&gt;</div></td></tr><tr class="highlight-line"><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="10"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">        Click me</div></td></tr><tr class="highlight-line"><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="11"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="12"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="13"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">  );</div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="14"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">}</div></td></tr></tbody></table></code></pre>
-                    <p>
-                        好漂亮！以后不用截图了！
-                    </p>
-                </section>
-
-                <section
-                    data-background="src/img/zl.gif"
-                    class="future"
-                    aria-hidden="true"
-                    data-background-image="src/img/zl.gif"
-                    style="top: 350px; display: none;"
-                >
-                    <h2>没了，其他功能以后玩</h2>
-                    <h3>886mua～</h3>
-                </section>
-            </div>
-            <div class="backgrounds">
-                <div
-                    class="slide-background present"
-                    data-loaded="true"
-                    style="display: block;"
-                >
-                    <div class="slide-background-content"></div>
-                </div>
-                <div
-                    class="slide-background future"
-                    data-loaded="true"
-                    style="display: block;"
-                >
-                    <div class="slide-background-content"></div>
-                </div>
-                <div
-                    class="slide-background future"
-                    data-loaded="true"
-                    style="display: block;"
-                >
-                    <div class="slide-background-content"></div>
-                </div>
-                <div class="slide-background future" style="display: none;">
-                    <div class="slide-background-content"></div>
-                </div>
-                <div class="slide-background future" style="display: none;">
-                    <div class="slide-background-content"></div>
-                </div>
-                <div class="slide-background future" style="display: none;">
-                    <div class="slide-background-content"></div>
-                </div>
-                <div class="slide-background future" style="display: none;">
-                    <div class="slide-background-content"></div>
-                </div>
-                <div class="slide-background future" style="display: none;">
-                    <div class="slide-background-content"></div>
-                </div>
-                <div
-                    class="slide-background stack future"
-                    style="display: none;"
-                >
-                    <div class="slide-background-content"></div>
-                    <div
-                        class="slide-background present"
-                        style="display: none;"
-                    >
-                        <div class="slide-background-content"></div>
-                    </div>
-                    <div class="slide-background future" style="display: none;">
-                        <div class="slide-background-content"></div>
-                    </div>
-                    <div class="slide-background future" style="display: none;">
-                        <div class="slide-background-content"></div>
-                    </div>
-                    <div class="slide-background future" style="display: none;">
-                        <div class="slide-background-content"></div>
-                    </div>
-                    <div class="slide-background future" style="display: none;">
-                        <div class="slide-background-content"></div>
-                    </div>
-                </div>
-                <div
-                    class="slide-background stack future"
-                    style="display: none;"
-                >
-                    <div class="slide-background-content"></div>
-                    <div
-                        class="slide-background present"
-                        style="display: none;"
-                    >
-                        <div class="slide-background-content"></div>
-                    </div>
-                    <div class="slide-background future" style="display: none;">
-                        <div class="slide-background-content"></div>
-                    </div>
-                    <div class="slide-background future" style="display: none;">
-                        <div class="slide-background-content"></div>
-                    </div>
-                    <div class="slide-background future" style="display: none;">
-                        <div class="slide-background-content"></div>
-                    </div>
-                </div>
-                <div
-                    class="slide-background stack future"
-                    style="display: none;"
-                >
-                    <div class="slide-background-content"></div>
-                    <div
-                        class="slide-background present"
-                        style="display: none;"
-                    >
-                        <div class="slide-background-content"></div>
-                    </div>
-                    <div class="slide-background future" style="display: none;">
-                        <div class="slide-background-content"></div>
-                    </div>
-                    <div class="slide-background future" style="display: none;">
-                        <div class="slide-background-content"></div>
-                    </div>
-                    <div class="slide-background future" style="display: none;">
-                        <div class="slide-background-content"></div>
-                    </div>
-                    <div class="slide-background future" style="display: none;">
-                        <div class="slide-background-content"></div>
-                    </div>
-                    <div class="slide-background future" style="display: none;">
-                        <div class="slide-background-content"></div>
-                    </div>
-                </div>
-                <div class="slide-background future" style="display: none;">
-                    <div class="slide-background-content"></div>
-                </div>
-                <div class="slide-background future" style="display: none;">
-                    <div class="slide-background-content"></div>
-                </div>
-                <div class="slide-background future" style="display: none;">
-                    <div class="slide-background-content"></div>
-                </div>
-                <div class="slide-background future" style="display: none;">
-                    <div class="slide-background-content"></div>
-                </div>
-                <div class="slide-background future" style="display: none;">
-                    <div class="slide-background-content"></div>
-                </div>
-                <div class="slide-background future" style="display: none;">
-                    <div class="slide-background-content"></div>
-                </div>
-                <div class="slide-background future" style="display: none;">
-                    <div class="slide-background-content"></div>
-                </div>
-                <div class="slide-background future" style="display: none;">
-                    <div class="slide-background-content"></div>
-                </div>
-                <div class="slide-background future" style="display: none;">
-                    <div class="slide-background-content"></div>
-                </div>
-                <div class="slide-background future" style="display: none;">
-                    <div class="slide-background-content"></div>
-                </div>
-                <div class="slide-background future" style="display: none;">
-                    <div class="slide-background-content"></div>
-                </div>
-            </div>
-            <div class="progress" style="display: block;">
-                <span style="width: 0px;"></span>
-            </div>
-            <aside
-                class="controls"
-                data-controls-layout="bottom-right"
-                data-controls-back-arrows="faded"
-                style="display: block;"
-            >
-                <button
-                    class="navigate-left"
-                    aria-label="previous slide"
-                    disabled="disabled"
-                >
-                    <div class="controls-arrow"></div></button
-                ><button
-                    class="navigate-right enabled highlight"
-                    aria-label="next slide"
-                >
-                    <div class="controls-arrow"></div></button
-                ><button
-                    class="navigate-up"
-                    aria-label="above slide"
-                    disabled="disabled"
-                >
-                    <div class="controls-arrow"></div></button
-                ><button
-                    class="navigate-down"
-                    aria-label="below slide"
-                    disabled="disabled"
-                >
-                    <div class="controls-arrow"></div>
-                </button>
-            </aside>
-            <div class="slide-number" style="display: block;">
-                <a href="https://www.lfhacks.com/assets/revealjs.html#/"
-                    ><span class="slide-number-a">1</span
-                    ><span class="slide-number-delimiter">/</span
-                    ><span class="slide-number-b">34</span></a
-                >
-            </div>
-            <div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div>
-            <div class="pause-overlay">
-                <button class="resume-button">Resume presentation</button>
-            </div>
-            <div
-                id="aria-status-div"
-                aria-live="polite"
-                aria-atomic="true"
-                style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);"
-            >
-                reveal.js 教程 按 → 继续
-            </div>
+      <div class="backgrounds">
+        <div
+          class="slide-background present"
+          data-loaded="true"
+          style="display: block;"
+        ></div>
+        <div
+          class="slide-background future"
+          data-loaded="true"
+          style="display: block;"
+        ></div>
+        <div
+          class="slide-background stack future"
+          data-loaded="true"
+          style="display: block;"
+        >
+          <div
+            class="slide-background present"
+            data-loaded="true"
+            style="display: block;"
+          ></div>
+          <div class="slide-background future" style="display: none;"></div>
+          <div class="slide-background future" style="display: none;"></div>
         </div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background stack future" style="display: none;">
+          <div class="slide-background present" style="display: none;"></div>
+          <div class="slide-background future" style="display: none;"></div>
+        </div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background stack future" style="display: none;">
+          <div
+            class="slide-background present"
+            data-background-hash="#ddddddnullnullnullnullnullnullnullnull"
+            style="background: rgb(221, 221, 221); display: none;"
+          ></div>
+          <div
+            class="slide-background future"
+            data-background-hash="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.pngnullnullnullnullnullnullnullnull"
+            style="display: none;"
+          ></div>
+          <div
+            class="slide-background future"
+            data-background-hash="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png100pxnullnullnullnullrepeatnullnull"
+            data-background-size="100px"
+            style="background-size: 100px; background-repeat: repeat; display: none;"
+          ></div>
+          <div
+            class="slide-background future"
+            data-background-hash="0https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webmnull#000000nullnullnull"
+            style="background-color: rgb(0, 0, 0); display: none;"
+          ></div>
+          <div
+            class="slide-background future"
+            data-background-hash="http://i.giphy.com/90F8aUepslB84.gifnullnullnullnullnullnullnullnull"
+            style="display: none;"
+          ></div>
+        </div>
+        <div
+          class="slide-background future"
+          data-background-hash="#4d7e65nullnullnullnullnullnullnullzoom"
+          data-background-transition="zoom"
+          style="background: rgb(77, 126, 101); display: none;"
+        ></div>
+        <div
+          class="slide-background future"
+          data-background-hash="#b5533cnullnullnullnullnullnullnullzoom"
+          data-background-transition="zoom"
+          style="background: rgb(181, 83, 60); display: none;"
+        ></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+        <div class="slide-background future" style="display: none;"></div>
+      </div>
+      <div class="progress" style="display: block;">
+        <span style="width: 0px;"></span>
+      </div>
+      <aside
+        class="controls"
+        data-controls-layout="bottom-right"
+        data-controls-back-arrows="faded"
+        style="display: block;"
+      >
+        <button
+          class="navigate-left"
+          aria-label="previous slide"
+          disabled="disabled"
+        >
+          <div class="controls-arrow"></div></button
+        ><button
+          class="navigate-right enabled highlight"
+          aria-label="next slide"
+        >
+          <div class="controls-arrow"></div></button
+        ><button
+          class="navigate-up"
+          aria-label="above slide"
+          disabled="disabled"
+        >
+          <div class="controls-arrow"></div></button
+        ><button
+          class="navigate-down"
+          aria-label="below slide"
+          disabled="disabled"
+        >
+          <div class="controls-arrow"></div>
+        </button>
+      </aside>
+      <div class="slide-number" style="display: none;"></div>
+      <div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div>
+      <div class="pause-overlay"></div>
+      <div
+        id="aria-status-div"
+        aria-live="polite"
+        aria-atomic="true"
+        style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);"
+      >
+        Reveal.js The HTML Presentation Framework Created by Hakim El Hattab and
+        contributors
+      </div>
+      <div
+        id="searchinputdiv"
+        class="searchdiv"
+        style="position: absolute; top: 10px; right: 10px; z-index: 10; display: none;"
+      >
+        <span
+          ><input
+            type="search"
+            id="searchinput"
+            class="searchinput"
+            style="vertical-align: top;"/><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJiSURBVHjatFZNaxNBGH5md+Mmu92NVdKDRipSAyqCghgQD4L4cRe86UUtAQ+eFCxoa4/25EXBFi8eBE+eRPoDhB6KgiiixdAPCEkx2pjvTXadd9yNsflwuyUDD/O+u8PzzDPvzOwyx3EwyCZhwG3gAkp7MnpjgbopjsltcD4gjuXZZKeAR348MYLYTm3LzOs/y3j3JTfZxgXWXmTuwPHIc4VmoOmv5IrI53+AO2DdHLjkDWQ3GoEEVFXtXQOvkSnPWcyUceviLhwbDYv8/XIVj97kse7TodLvZXxYxrPUHkQ1ufXs3FEdybEIxucySOesoNvUgWU1cP3MkCBfTFdw9fGaAMVmRELq7LBw2Q3/FaAxxWIRpw+ZIr/7IouPqzUBiqmdHAv7EuhRAwf1er2Vy4x1jW3b2d5Jfvu5IPp7l2LYbcgCFFNb+FoJ7oBqEAqFMPNqFcmEgVMJDfMT+1tvN0pNjERlMS6QA5pFOKxiKVPFhakPeL3It+WGJUDxt2wFR+JhzI7v5ctkd8DXOZAkCYYxhO+lKm4+Xfqz/rIixBuNBl7eOYzkQQNzqX249mRl6zUgEcYkaJrGhUwBinVdh6IouPzwE6/DL5w4oLkH8y981aDf+uq6hlKpJESiUdNfDZi7/ehG9K6KfiA3pml0PLcsq+cSMTj2NL9ukc4UOmz7AZ3+crkC4mHujFvXNaMFB3bEr8xPS6p5O+jXxq4VZtaen7/PwzrntjcLUE0iHPS1Ud1cdiEJl/8WivZk0wXd7zWOMkeF8s0CcAmkNrC2nvXZDbbbN73ccYnZoH9bfgswAFzAe9/h3dbKAAAAAElFTkSuQmCC"
+            id="searchbutton"
+            class="searchicon"
+            style="vertical-align: top; margin-top: -1px;"
+        /></span>
+      </div>
+    </div>
 
-        <script src="./src/head.min.js"></script>
-        <script src="./src/reveal.js"></script>
+    <script src="./src/head.min.js"></script>
+    <script src="./src/reveal.js"></script>
 
-        <script>
-            // More info https://github.comfalse/hakimel/reveal.js#configuration
-            Reveal.initialize({
-                slideNumber: true,
-                // More info https://github.com/hakimel/reveal.js#dependencies
-                dependencies: [
-                    { src: "../lib/reveal/plugin/markdown/marked.js" },
-                    { src: "../lib/reveal/plugin/markdown/markdown.js" },
-                    { src: "../lib/reveal/plugin/notes/notes.js", async: true },
-                    {
-                        src: "../lib/reveal/plugin/highlight/highlight.js",
-                        async: true,
-                        callback: function() {
-                            hljs.initHighlightingOnLoad()
-                        }
-                    }
-                ]
-            })
-            Reveal.configure({ slideNumber: "c/t" })
-        </script>
-    </body>
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        margin: 0.2,
+
+        transition: "slide", // none/fade/slide/convex/concave/zoom
+        transitionSpeed: "fast",
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          {
+            src: "lib/js/classList.js",
+            condition: function() {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: "plugin/markdown/marked.js",
+            condition: function() {
+              return !!document.querySelector("[data-markdown]");
+            }
+          },
+          {
+            src: "plugin/markdown/markdown.js",
+            condition: function() {
+              return !!document.querySelector("[data-markdown]");
+            }
+          },
+          {
+            src: "plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          { src: "plugin/search/search.js", async: true },
+          { src: "plugin/zoom-js/zoom.js", async: true },
+          { src: "plugin/notes/notes.js", async: true }
+        ]
+      });
+    </script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-24132749-1");
+    </script>
+  </body>
 </html>
