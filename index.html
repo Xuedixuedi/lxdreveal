@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0052)https://revealjs-themes.dzello.com/robot-lung.html#/ -->
 <html
   lang="en"
   class=" js no-mobile desktop no-ie chrome chrome78 root-section gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius cssreflections csstransforms csstransitions no-touch retina fontface domloaded w-1440 gt-240 gt-320 gt-480 gt-640 gt-768 gt-800 gt-1024 gt-1280 lt-1680 lt-1920 no-portrait landscape"
@@ -167,7 +166,6 @@
                 src="http://programmermagazine.github.io/201407/img/Minimax.jpg"
                 data-lazy-loaded=""
               />
-            </a>
           </section>
 
           <section
@@ -200,7 +198,7 @@
           >
             <h2>搜索优化3</h2>
             <h3>定时截断（不一定适合所有人）</h3>
-            <p>判断程序运行的时间，在即将超时的时候强行返回当前最优解。</p>
+            <p>用clock()判断程序运行的时间，在即将超时的时候强行返回当前最优解。</p>
             <ul>
                 <li>可以解决部分超时的局面</li>
                 <li>但是可能会影响棋力</li>
@@ -240,30 +238,34 @@
               0 0 0 1   &nbsp;&nbsp;&nbsp;&nbsp;    1 1 0 1
             </p>
             <p>
-              <span>
-                用与/或等运算更新棋盘状态，优点是
-              </span>
-              <span class="fragment grow" data-fragment-index="0">
-                <b>
-                 快！
-                </b>
-              </span>
+              
+                用与/或等运算更新棋盘状态，优点是<b>快!</b>
             </p>
             <p>
               在估值的时候多思考如何减少循环 怎么节省时间
             </p>
             <!-- <p class="fragment grow" data-fragment-index="1">快</p>  -->
           </section>
-          <section
-            class="future"
-            aria-hidden="true"
-            style="top: 350px; display: none;"
-          >
-            <h2>估值优化3</h2>
-            <h3>终局判断</h3>
-            <p>在距离棋局结束的几步减少搜索的层数，删除不必要的估值，优化估值内容</p>
-          </section>
+        <section
+          class="future"
+          aria-hidden="true"
+          style="top: 350px; display: none;"
+        >
+          <h2>估值优化3</h2>
+          <h3>终局判断</h3>
+          <p>在距离棋局结束的几步减少搜索的层数，删除不必要的估值，优化估值内容</p>
+          <pre><code class="hljs c" data-trim contenteditable>
+if (step >= 118) {
+  score = 1000 * meNum - 500 * otherNum + 300 * nowEat;
+}
+else {
+  score = 1000 * meNum - 500 * otherNum - togetherScore - 120 * pickClamp + 400 * nowEat;
+}
+return score;
+          </code></pre>
         </section>
+      </section>
+
 
         <section
         hidden=""
@@ -286,7 +288,27 @@
           </b>
         </p>
 
-      </section>
+       </section>
+        <section
+        hidden=""
+        aria-hidden="true"
+        class="future"
+        style="top: 350px; display: none;"
+      >
+        <h2>写在最后的话</h2>
+        <ul>
+          <li>勤能补拙，积极调参。</li>
+          <li>目光长远，精益求精。</li>
+        </ul>
+        <br>
+        <br>
+        <img
+            alt="Down arrow"
+            src="./src/pics/xyp.jpg"
+            data-lazy-loaded=""
+          />
+
+        </section>
 
       <section
       style="text-align: left; top: 350px; display: none;"
